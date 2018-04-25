@@ -4,6 +4,8 @@
   border: 0;
 }
 
+/* Header */
+
 header {
   font-family: Verdana;
   font-size: 14px;
@@ -17,9 +19,8 @@ header {
 
 header .logo {
   padding: 0 0 0 30px;
-  /* background-color: red; */
-  width: 100%;
   display: flex;
+  flex: 1;
 }
 
 header .logo span {
@@ -28,15 +29,104 @@ header .logo span {
 
 header nav {
   padding: 0 40px 0 0;
-  /* background-color: blue; */
   display: flex;
 }
 
 header span {
   padding: 20px 10px;
-  /* background-color: orange; */
 }
 
 header span a {
   color: black;
+}
+
+/* Main */
+
+main {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 116px 0 0 0;
+  font-family: georgia;
+  font-size: 17px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+main li {
+  list-style: none;
+}
+
+main h1 {
+  font-size: 40px;
+}
+
+main h2 {
+  font-size: 30px;
+}
+
+/* Columns */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.large {
+  background: lightblue;
+  max-width: 630px;
+}
+
+.medium {
+  background: lightgreen;
+  max-width: 300px;
+}
+
+.small {
+  background: lightyellow;
+  max-width: 240px;
+}
+
+/* Images */
+
+.story-image {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.story-image span {
+  width: 300px;
+}
+
+
+.story-image.lead {
+  background: url(./../images/img-story-main.png) no-repeat;
+  height: 300px;
+  display: flex;
+  text-align: left;
+}
+
+.story-image.lead h1 {
+  margin: 0 30px;
+}
+
+.story-image.one {
+  height: 300px;
+  background: url(./../images/img-story-trees.png) no-repeat;
+}
+
+
+.story-image.two {
+  height: 300px;
+  background: url(./../images/img-story-camera.png) no-repeat;
+}
+
+.story-image.three {
+  height: 300px;
+  background: url(./../images/img-story-cat.png) no-repeat;
 }
